@@ -1,0 +1,21 @@
+D:\Study\Java Optimization\Lab 6>javac -d bin src/*.java
+
+# -d bin указывает директорию, куда будут помещены скомпилированные .class файлы (в данном случае, директория bin).
+# src/*.java указывает на все .java файлы в директории src.
+
+
+D:\Study\Java Optimization\Lab 6>jar cvf myjar.jar -C bin .
+# jar перенесла в ./proguard
+
+# c означает "create" (создать новый архив).
+# v означает "verbose" (вывод подробной информации).
+# f означает, что следующим аргументом будет имя выходного файла (в данном случае myjar.jar).
+# -C bin . указывает на директорию bin и означает, что все содержимое этой директории должно быть добавлено в JAR-файл.
+
+
+D:\Study\Java Optimization\Lab 6\src\proguard>C:\Users\Ольга\Downloads\proguard-7.4.2\proguard-7.4.2\bin\proguard.bat @keepmethodsbysignature.pro
+
+
+D:\Study\Java Optimization\Lab 6\src\proguard>javap -c -v jar:file:doeverything.jar!/a.class
+
+D:\Study\Java Optimization\Lab 6\bin>javap -c -v Sock.class
